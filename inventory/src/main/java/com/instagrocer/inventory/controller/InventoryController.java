@@ -32,6 +32,11 @@ public class InventoryController {
         return new ResponseEntity<List<ItemBean>>(HttpStatus.NOT_FOUND);
     }
 
+    @RequestMapping(value = "", method = RequestMethod.GET, produces = MediaType.TEXT_HTML_VALUE)
+    public ResponseEntity<String> hello(){
+        return new ResponseEntity<String>("Hello World",HttpStatus.OK);
+    }
+
     @RequestMapping(value = "item", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ItemBean> getItem(@RequestParam(name = "itemid", required = true) int itemid){
         ItemBean item = InventoryService.getItem(itemid);
