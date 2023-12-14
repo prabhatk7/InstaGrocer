@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.instagrocer</groupId>
-	<artifactId>inventory</artifactId>
+	<artifactId>catalog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory</name>
-	<description>inventory microservice for InstaGrocer</description>
+	<name>catalog</name>
+	<description>Catalog microsevice for InstaGrocer</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -40,6 +40,7 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.6.0</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
